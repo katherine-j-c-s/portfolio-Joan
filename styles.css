@@ -1,0 +1,362 @@
+body {
+    margin: 0px;
+}
+a {
+    text-decoration: none;
+    color: rgb(19, 19, 58);
+}
+li {
+    list-style: none;
+    margin: 0% 3%;
+}
+button {
+    border: none;
+    background: none;
+}
+.hidden {
+    display: none !important;
+}
+.sidebar {  
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0px 3px 30px 2px #000000;
+    position: relative;
+    z-index: 3;
+}
+.sidebar-header {
+    width: 20%;
+}
+.linksSide {
+    width: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.social-iconsSide {
+    width: 20%;
+    display: flex;
+    padding: 0;
+    justify-content: space-around;
+}
+.fa-solid {
+    margin: 2%;
+}
+.show-sidebar{
+    transform: translate(0);
+}
+.homeContainer {
+    background-image: url("./img/Captura.PNG");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.home {
+    background: rgba(142, 52, 145, 0.74);
+    padding: 10% 5%;
+    width: 90%;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+.perfilPhoto {
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+}
+.photo {
+    height: 20rem;
+}
+.homeText {
+    width: 15%;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.titte {
+    color: rgb(255, 255, 255);
+}
+.subtitte {
+    color: rgb(255, 165, 81);
+}
+.text {
+    font-size: 24px;
+    color:rgb(255, 255, 255);
+}
+.aboutContainer {
+    background: black;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 0px 6px 4px black;
+}
+.About {
+    padding: 0% 0%;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+.aboutme {
+    padding: 0;
+    width: 25%;
+    margin: 0 10% 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.aboutImg {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+.aboutImg img {
+    height: 35rem;
+}
+.servisesContainar {
+    background: rgb(191, 243, 240);
+    padding: 5% 0%;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+.myservises {
+    padding: 0;
+    width: 20%;
+    margin: 0 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.myservises h1 {
+    color: rgb(255, 165, 81);
+}
+.typesOfMusicStyles {
+    padding: 0;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.musiStyles {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.stylesM {
+    width: 50%;
+}
+.styleText {
+    width: 50%;
+    padding: 5%;
+    border-radius: 9px;
+    text-align: center;
+    border: solid 2px rgb(255, 165, 81);
+    box-shadow: 4px 8px 10px -4px rgb(255, 145, 81);
+}
+.projectsContainer {
+    display: flex;
+    flex-direction: column;
+}
+.projectsTitleContainer {
+    background-image: url(./img/CapturaPiano.PNG);
+    background-size: 100%;
+    height: 15rem;
+    background-repeat: no-repeat;
+}
+.projectsTitle {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    height: 15rem;
+    background: #000000d8;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 6px 2px #000000;
+    position: relative;
+    z-index: 3;
+}
+.projectsTitle h1 {
+    margin: 0;
+    color: crimson;
+    font-size: 49px;
+    letter-spacing: 11px;
+}
+.theProjects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.project {
+    width: 33.33%;
+}
+.fondoProjects {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    background: #000000b4;
+    transition: all ease-out 1s;
+    opacity: 1;
+}
+.fondoProjects:hover {
+    opacity: 0;
+}
+iframe {
+    position: relative;
+    z-index: 0;
+    top: -16rem;
+}
+.contact {
+    background: rgba(143, 42, 192, 27.74);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contact ul {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+@media only screen and (max-width: 800px ){
+    li {
+        margin: 7% 10% !important;
+    }
+    .social-iconsSide {
+        bottom: -25rem;
+    }
+    .sidebar-toggle {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 100%;
+        margin: 0rem;
+        padding: 0.5rem;
+        z-index: 0;
+        box-shadow: 5px 3px 19px 11px rgb(0 0 0 / 20%);
+    }
+    .sidebar-header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 2rem;
+    }
+    .fa-solid {
+        margin: 2%;
+    }
+    .sidebar {  
+        position: fixed;
+        top: 0rem;
+        left: 0rem;
+        height: 40rem;
+        background: white;
+        width: 100%;
+        display: grid;
+        justify-content: initial;
+        grid-template-rows: auto 1fr auto;
+        row-gap: 1rem;
+        transition: all ease 0.5s;
+        transform: translate(-120%);
+    }
+    .show-sidebar{
+        transform: translate(0);
+    }
+    .close-btn {
+        margin: 0% 5%;
+    }
+    .tittle {
+        font-size: 30px;
+    }
+    .linksSide {
+        height: 100%;
+        width: 100%;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .social-iconsSide {
+        width: 100%;
+    }
+    .homeContainer {
+        background-size: cover;
+    }
+    .home {
+        flex-direction: column-reverse;
+    }
+    .homeText{
+        width: 100%;
+        text-align: center;
+    }
+    .perfilPhoto {
+        width: 100%;
+        justify-content: center;
+    }
+    .photo {
+        height: 15rem;
+    }
+    .About {
+        flex-direction: column-reverse;
+    }
+    .aboutme {
+        padding: 0;
+        width: 87%;
+        margin: 20% 0% 20% 0%;
+        text-align: justify;
+        background: rgba(0, 0, 0, 0.781);
+        box-shadow: -4px 3px 4px 1px crimson;
+        position: relative;
+        line-height: 2rem;
+    }
+    .aboutImg {
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+    }
+    .aboutImg img {
+        height: 100%;
+        width: 100%;
+    }
+    .servisesContainar {
+        flex-direction: column;
+    }
+    .myservises {
+        width: 94%;
+        text-align: center;
+    }
+    .typesOfMusicStyles {
+        width: 94%;
+    }
+    .stylesM {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    .styleText {
+        width: 80%;
+        padding: 5%;
+        border-radius: 4px;
+    }
+    .projectsTitleContainer {
+        background-size: cover;
+    }
+    .project {
+        width: 50%;
+    }
+    .projectsTitle h1 {
+        font-size: 34px;
+    }
+    .contact ul{
+        width: 100%;
+        margin: 0px;
+        padding: 0;
+    }
+    .contact li {
+        margin: 3% 10% !important;
+    }
+}
